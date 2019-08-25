@@ -354,6 +354,9 @@ a{
 .visit a{
     font-weight: 700;
 }
+.visit a:hover{
+	text-decoration: underline;
+}
 
 /* end info section */
 
