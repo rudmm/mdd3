@@ -279,16 +279,13 @@ a{
 }
 
 @media screen and (max-width: 1366px){
-    .top{
-        margin-right: 0;
-        padding-right: 50px;
-    }
+    
     .top-image{
         right: 20px;
     }
     section{
         margin-left: 40px;
-        margin-right: 50px;
+        margin-right: 40px;
     }
 }
 
@@ -592,6 +589,9 @@ a{
         -o-transform: rotate(-135deg);
         transform: rotate(-135deg);
       }
+      .header-text{
+          display: none;
+      }
       .menu-bar{
           display: flex;
           flex-direction: column;
@@ -608,6 +608,40 @@ a{
       .section-tittle > *{
           font-size: 25px;
           line-height: 45px;
+      }
+      .info-content{
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+      .info-text{
+          font-size: 16px;
+          margin-bottom: 50px;
+      }
+      .moderators-list{
+          margin-top: 10px;
+      }
+      .moderators-item{
+          margin-bottom: 10px;
+      }
+      .target{
+          margin-top: 50px;
+          margin-bottom: 50px;
+      }
+      .target-text{
+          margin-top: 10px;
+      }
+      .disclaimer-text{
+          font-size: 16px;
+          margin-top: 10px;
+          margin-bottom: 50px;
+      }
+      .instruction-text{
+          font-size: 16px;
+          margin-top: 10px;
+          margin-bottom: 50px;
+      }
+      .hardware-content{
+          margin-top: 20px;
       }
 }
 @media screen and (max-width: 768px){
@@ -638,8 +672,15 @@ a{
     .top-text p:nth-of-type(1), .top-text p:nth-of-type(2){
         max-width: 100%;
     }
-    .top-text p{
-        margin-right: 0;
+    .top-text > * {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .top-released{
+        margin-bottom: 20px;
+    }
+    .top-btn a{
+        margin-bottom: 50px;
     }
     section{
         margin-left: 20px;
@@ -692,11 +733,11 @@ a{
     .top-btn a{
         margin-bottom: 20px;
     }
-    .target{
-        margin-top: 0;
-    }
     .disclaimer{
         margin-top: 0;
+    }
+    .info-icon{
+        margin-right: 20px;
     }
 }
 
@@ -726,13 +767,13 @@ a{
         line-height: 25px;
     }
     .section-tittle > *{
-        font-size: 23px;
-        line-height: 25px;
+        font-size: 21px;
+        line-height: 30px;
     }
-    .objectives .section-tittle{
+    .hardware .section-tittle{
         padding-top: 20px;
     }
-    .objectives-content{
+    .hardware-content{
         margin-top: 10px;
     }
     .disclaimer{
@@ -741,37 +782,37 @@ a{
     .disclaimer-text{
         margin-top: 10px;
     }
-    .docent-list{
+    .moderators-list{
         margin-top: 10px;
     }
-    .docent-tittle{
+    .moderators-tittle{
         font-size: 16px;
         line-height: 20px;
     }
-    .docent-text{
+    .moderators-text{
          font-size: 14px;
          line-height: 19px;
     }
-    .financial{
-        margin-top: 20px;
+    .info-data{
+        width: 190px;
     }
-    .financial-content{
-        margin-top: 10px;
-    }
-    .accreditation{
-        margin-top: 20px;
-    }
-    .accreditation-text{
-        margin-top: 10px;
-    }
-    .dates{
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .left-block, .right-block{
+        width: 45%;
+        font-size: 13px;
     }
 }
 
 @media screen and (max-width: 320px){
     .menu-bar li{
         font-size: 13px;
+    }
+    .info-icon{
+        margin: 0 ;
+        display: block;
+    }
+    .info-data{
+        display: block;
+        margin: 10px auto 0;
+        width: 100%;
     }
 }
